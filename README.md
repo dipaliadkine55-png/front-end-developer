@@ -1,2 +1,2 @@
-# front-end-developer
-wireframe static webpage
+# yuvaintern frontend developer task1
+wireframe into static wabepage
