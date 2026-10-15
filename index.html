@@ -3,96 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wireframe to Static Page | Yuvaintern Task</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Web Design Portfolio - Week 2</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header class="site-header">
         <div class="container header-container">
-            <div class="logo">
-                <span class="logo-icon">⚡</span>
-                <span class="logo-text">BrandName</span>
-            </div>
-            <nav class="site-nav">
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+            <h1 class="logo">DevPortfolio</h1>
+            <nav class="nav-menu">
+                <a href="#hero">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <div class="header-cta">
-                <a href="#contact" class="btn btn-outline">Get Started</a>
-            </div>
         </div>
     </header>
 
-    <!-- Main Content Wrapper -->
-    <main class="main-content">
-
-        <!-- Hero Section -->
+    <main>
         <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1>Transforming Wireframes Into Reality</h1>
-                    <p>A clean, semantic, and fully responsive static web page built with modern HTML5 and CSS3.</p>
-                    <div class="hero-buttons">
-                        <a href="#features" class="btn btn-primary">Explore Features</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero-image-placeholder">
-                    <span>[ Wireframe Mockup Preview ]</span>
-                </div>
+            <div class="container hero-content">
+                <h2>Building for Every Screen Size</h2>
+                <p>Mastering flexible grids, fluid images, and CSS media queries for seamless multi-device adaptation.</p>
+                <a href="#features" class="btn">Explore Features</a>
             </div>
         </section>
 
-        <!-- Features Section (Grid Layout) -->
-        <section id="features" class="features-section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Key Features</h2>
-                    <p>Designed with precision, built for performance.</p>
-                </div>
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <div class="card-icon">📐</div>
-                        <h3>Pixel-Perfect Layout</h3>
-                        <p>Carefully calibrated spacing and typography mirroring your exact wireframe concept.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="card-icon">🌐</div>
-                        <h3>Semantic HTML5</h3>
-                        <p>Structured with meaningful tags like &lt;header&gt;, &lt;main&gt;, and &lt;section&gt; for superior SEO and accessibility.</p>
-                    </article>
-                    <article class="feature-card">
-                        <div class="card-icon">📱</div>
-                        <h3>Fully Responsive</h3>
-                        <p>Fluid scaling across mobile, tablet, and desktop viewports using CSS media queries.</p>
-                    </article>
-                </div>
+        <section id="features" class="features-section container">
+            <h3>Responsive Core Pillars</h3>
+            <div class="card-grid">
+                <article class="card">
+                    <h4>Flexible Grids</h4>
+                    <p>Using CSS Grid and Flexbox to automatically rearrange layouts based on available viewport width.</p>
+                </article>
+                <article class="card">
+                    <h4>Fluid Images</h4>
+                    <p>Ensuring media scales proportionally without overflowing containers using max-width: 100%.</p>
+                </article>
+                <article class="card">
+                    <h4>Media Queries</h4>
+                    <p>Applying targeted styling rules at specific breakpoints to optimize typography and spacing.</p>
+                </article>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer Section -->
     <footer class="site-footer">
-        <div class="container footer-container">
-            <p>&copy; 2026 InternCircle Web Development Internship. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-            </ul>
+        <div class="container">
+            <p>&copy; 2026 Frontend Web Developer Intern. All rights reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>

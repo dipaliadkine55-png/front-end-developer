@@ -1,2 +1,2 @@
-# yuvaintern frontend developer task1
-wireframe into static wabepage
+# yuvaintern front end developer task2
+responsive web design
