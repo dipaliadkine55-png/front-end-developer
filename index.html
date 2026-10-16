@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Web Design Portfolio - Week 2</title>
+    <title>Interactive Web App - Week 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container header-container">
             <h1 class="logo">DevPortfolio</h1>
-            <nav class="nav-menu">
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <nav id="nav-menu" class="nav-menu">
                 <a href="#hero">Home</a>
                 <a href="#features">Features</a>
-                <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+                <button id="theme-toggle" class="theme-btn">🌙 Dark Mode</button>
             </nav>
         </div>
     </header>
@@ -22,35 +23,36 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="container hero-content">
-                <h2>Building for Every Screen Size</h2>
-                <p>Mastering flexible grids, fluid images, and CSS media queries for seamless multi-device adaptation.</p>
-                <a href="#features" class="btn">Explore Features</a>
+                <h2>Dynamic User Experiences</h2>
+                <p>Enhancing web applications with DOM manipulation, event handling, and real-time validation.</p>
             </div>
         </section>
 
-        <section id="features" class="features-section container">
-            <h3>Responsive Core Pillars</h3>
-            <div class="card-grid">
-                <article class="card">
-                    <h4>Flexible Grids</h4>
-                    <p>Using CSS Grid and Flexbox to automatically rearrange layouts based on available viewport width.</p>
-                </article>
-                <article class="card">
-                    <h4>Fluid Images</h4>
-                    <p>Ensuring media scales proportionally without overflowing containers using max-width: 100%.</p>
-                </article>
-                <article class="card">
-                    <h4>Media Queries</h4>
-                    <p>Applying targeted styling rules at specific breakpoints to optimize typography and spacing.</p>
-                </article>
-            </div>
+        <section id="contact" class="contact-section container">
+            <h3>Get in Touch</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-success" class="success-message" style="display: none;">Thank you! Your message has been sent.</p>
+            </form>
         </section>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Frontend Web Developer Intern. All rights reserved.</p>
+            <p>&copy; 2026 Frontend Web Developer Intern.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

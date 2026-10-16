@@ -1,0 +1,39 @@
+{
+  "intern": {
+    "name": "Frontend Web Developer Intern",
+    "department": "Engineering"
+  },
+  "task_report": {
+    "week": 3,
+    "title": "Integrating JavaScript for Interactive User Experience",
+    "objective": "Implement interactive features on a static webpage using plain JavaScript, DOM manipulation, and event handling.",
+    "deliverables": [
+      {
+        "type": "HTML",
+        "filename": "index.html",
+        "description": "Added interactive elements like menu toggles and form validation fields."
+      },
+      {
+        "type": "CSS",
+        "filename": "style.css",
+        "description": "Styled UI components with CSS variables supporting light and dark themes."
+      },
+      {
+        "type": "JavaScript",
+        "filename": "script.js",
+        "description": "Implemented mobile navigation toggle, theme persistence, and form validation."
+      }
+    ],
+    "challenges_and_solutions": [
+      {
+        "challenge": "Avoiding layout shifts during mobile menu expansion.",
+        "solution": "Used absolute positioning and smooth CSS transitions."
+      },
+      {
+        "challenge": "Persisting user theme preference across page reloads.",
+        "solution": "Integrated browser localStorage API."
+      }
+    ],
+    "status": "Completed"
+  }
+}

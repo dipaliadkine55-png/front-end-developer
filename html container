@@ -1,0 +1,10 @@
+<section class="data-section container">
+    <h3>Live Data Feed</h3>
+    <button id="load-data-btn" class="btn">Fetch Posts</button>
+    
+    <!-- Loading indicator -->
+    <div id="loading" style="display: none;">Loading data...</div>
+    
+    <!-- Container for dynamic content -->
+    <div id="data-container" class="card-grid" style="margin-top: 1.5rem;"></div>
+</section>
